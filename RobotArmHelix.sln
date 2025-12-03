@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36717.8 d17.14
+VisualStudioVersion = 17.14.36717.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotArmHelix", "RobotArmHelix\RobotArmHelix.csproj", "{E14738AE-AF61-4F59-841E-0A81B4D85893}"
 EndProject
@@ -18,6 +18,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit", "..\..\helix-toolkit\Source\HelixToolkit\HelixToolkit.csproj", "{BC123B67-0B20-5FCF-9B0D-CE997A97656B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit.Wpf", "..\..\helix-toolkit\Source\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj", "{47834E8C-F6B9-D727-5FC8-18CDA1D05E85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Solutionitems_RobotArmHelix", "0_Solutionitems_RobotArmHelix", "{21612A95-4CEF-49C4-8E4F-2CAA1956FCBA}"
+	ProjectSection(SolutionItems) = preProject
+		RobotArmHelix\RobotArmHelix.Old.csproj = RobotArmHelix\RobotArmHelix.Old.csproj
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

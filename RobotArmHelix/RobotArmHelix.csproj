@@ -26,10 +26,21 @@
 		<AssemblyCulture></AssemblyCulture>
 	</PropertyGroup>
 	
+	<!--
 	<ItemGroup>
 		<ProjectReference Include="..\..\..\helix-toolkit\Source\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj" />
 		<ProjectReference Include="..\..\..\helix-toolkit\Source\HelixToolkit\HelixToolkit.csproj" />
 	</ItemGroup>
+	-->
+
+	<ItemGroup>
+		<!--
+		<PackageReference Include="HelixToolkit.Wpf" Version="2.20.0" />
+		<PackageReference Include="HelixToolkit.Wpf" Version="1.0.0" />
+		-->
+		<PackageReference Include="HelixToolkit.Wpf" Version="2.20.0" />
+	</ItemGroup>
+
 
 	<ItemGroup>
 		<Reference Include="System" />
