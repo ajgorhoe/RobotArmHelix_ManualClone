@@ -122,6 +122,7 @@ namespace RobotArmHelix
         {
             InitializeComponent();
             basePath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\3D_Models\\";
+            basePath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "3D_Models");
             List<string> modelsNames = new List<string>();
             modelsNames.Add(MODEL_PATH1);
             modelsNames.Add(MODEL_PATH2);
@@ -191,7 +192,7 @@ namespace RobotArmHelix
                     materialGroup.Children.Add(diffMat);
                     materialGroup.Children.Add(specMat);
 
-                    var link = import.Load(basePath + modelName);
+                    var link = import.Load(System.IO.Path.Combine(basePath, modelName));
                     GeometryModel3D model = link.Children[0] as GeometryModel3D;
                     model.Material = materialGroup;
                     model.BackMaterial = materialGroup;
