@@ -1,9 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotArmHelix", "RobotArmHelix\RobotArmHelix.csproj", "{E14738AE-AF61-4F59-841E-0A81B4D85893}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelixToolkit", "HelixToolkit", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Solutionitems", "0_Solutionitems", "{10EF742E-7177-4392-B3F4-A43CABF5F2A1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\helix-toolkit\CHANGELOG.md = ..\..\helix-toolkit\CHANGELOG.md
+		..\..\helix-toolkit\DOCUMENTATION.md = ..\..\helix-toolkit\DOCUMENTATION.md
+		..\..\helix-toolkit\LICENSE = ..\..\helix-toolkit\LICENSE
+		..\..\helix-toolkit\README.md = ..\..\helix-toolkit\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit", "..\..\helix-toolkit\Source\HelixToolkit\HelixToolkit.csproj", "{BC123B67-0B20-5FCF-9B0D-CE997A97656B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit.Wpf", "..\..\helix-toolkit\Source\HelixToolkit.Wpf\HelixToolkit.Wpf.csproj", "{47834E8C-F6B9-D727-5FC8-18CDA1D05E85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +29,24 @@ Global
 		{E14738AE-AF61-4F59-841E-0A81B4D85893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E14738AE-AF61-4F59-841E-0A81B4D85893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E14738AE-AF61-4F59-841E-0A81B4D85893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC123B67-0B20-5FCF-9B0D-CE997A97656B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC123B67-0B20-5FCF-9B0D-CE997A97656B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC123B67-0B20-5FCF-9B0D-CE997A97656B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC123B67-0B20-5FCF-9B0D-CE997A97656B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47834E8C-F6B9-D727-5FC8-18CDA1D05E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47834E8C-F6B9-D727-5FC8-18CDA1D05E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47834E8C-F6B9-D727-5FC8-18CDA1D05E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47834E8C-F6B9-D727-5FC8-18CDA1D05E85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10EF742E-7177-4392-B3F4-A43CABF5F2A1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{BC123B67-0B20-5FCF-9B0D-CE997A97656B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{47834E8C-F6B9-D727-5FC8-18CDA1D05E85} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C2BA375-3D30-4ADF-BF0B-3950D0F30011}
 	EndGlobalSection
 EndGlobal
