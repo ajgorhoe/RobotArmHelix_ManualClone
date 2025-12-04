@@ -16,3 +16,8 @@ Usage:
   * `GrLibUpdateRepo_HelixToolkitForRobotArm.ps1` - clones the `Helix Toolkit` and checks out the appropriate branch
   * `GrLibUpdateRepo_RobotArmHelix.ps1` - clones the RoboArmHelix project and checks out the appropriate customization branch
   * Open the `RobotArmHelx` solution in Visual Studio, build it, and run the application. The solution is located at `RobotArmHelix\RobotArmHelix\RobotArmHelix.sln`
+
+Expected path of the robot model:
+
+> RobotArmHelix\RobotArmHelix\RobotArmHelix\bin\3D_Models\IRB6700-MH3_245-300_IRC5_rev02_LINK01_CAD.stl
+
