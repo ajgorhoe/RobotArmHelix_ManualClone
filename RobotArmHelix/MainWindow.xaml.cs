@@ -17,6 +17,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using HelixToolkit.Wpf;
 using System.IO;
+using System.Reflection;
 
 
 /**
@@ -50,6 +51,9 @@ namespace RobotArmHelix
     /// </summary>
     public partial class MainWindow : Window
    { 
+
+        const string modelDirectory = "3D_Models";
+
         //provides functionality to 3d models
         Model3DGroup RA = new Model3DGroup(); //RoboticArm 3d group
         Model3D geom = null; //Debug sphere to check in which point the joint is rotatin
@@ -121,8 +125,11 @@ namespace RobotArmHelix
         public MainWindow()
         {
             InitializeComponent();
-            basePath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\3D_Models\\";
-            basePath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "3D_Models");
+            // basePath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\3D_Models\\";  // does not work correctly
+            // basePath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), modelDirectory);    // works but depends on current directory
+            // Most robust location, relative to executable location, same as models directory itself:
+            basePath = System.IO.Path.Combine(
+                System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location), modelDirectory);  
             List<string> modelsNames = new List<string>();
             modelsNames.Add(MODEL_PATH1);
             modelsNames.Add(MODEL_PATH2);
