@@ -39,7 +39,7 @@
 		<_ExecPolicy Condition="'$(OS)' == 'Windows_NT'">-ExecutionPolicy Bypass</_ExecPolicy>
 		<!-- Define the command to be executed (use a SINGLE LINE for command!): -->
 		<InitCommand>
-			$(_PSExe) -NoProfile $(_ExecPolicy) -File "$(MSBuildProjectDirectory)/../../../scripts/UpdateDependencyRepos.ps1"
+			$(_PSExe) -NoProfile $(_ExecPolicy) -File "$(MSBuildProjectDirectory)/../../scripts/UpdateRepo_HelixToolkitForRobotArm.ps1"
 			<!-- Add eventual script arguments here, e.g.:
 				-Arg1 "$(SomeArg)" -Arg2 "$(AnotherArg)"  
 				-->
