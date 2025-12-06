@@ -26,12 +26,10 @@
 		<AssemblyCulture></AssemblyCulture>
 	</PropertyGroup>
 
-
 	<ItemGroup>
 		<ProjectReference Include="..\0InitModules\InitModule\InitModule.csproj"
 			ReferenceOutputAssembly="false" PrivateAssets="All"  />
 	</ItemGroup>
-
 
 	<ItemGroup>
 		<Reference Include="System.Windows.Forms" />
