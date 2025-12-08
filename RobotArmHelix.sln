@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit.Wpf", "..\heli
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Solutionitems_RobotArmHelix", "0_Solutionitems_RobotArmHelix", "{21612A95-4CEF-49C4-8E4F-2CAA1956FCBA}"
 	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		README_Customization.md = README_Customization.md
 		RobotArmHelix\RobotArmHelix.Old.csproj = RobotArmHelix\RobotArmHelix.Old.csproj
 	EndProjectSection
 EndProject
@@ -39,6 +41,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit.Geometry", "..\helix-toolkit-forRobotArm\Source\HelixToolkit.Geometry\HelixToolkit.Geometry.csproj", "{C03B2FCF-0796-D924-5373-22DB72BF051E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelixToolkit.Maths", "..\helix-toolkit-forRobotArm\Source\HelixToolkit.Maths\HelixToolkit.Maths.csproj", "{C19E3522-B147-5511-FEE9-984FF8446FB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{8D7DE512-334B-4BA7-9D62-C1A94130FFFC}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\UpdateOrCloneRepository.ps1 = scripts\UpdateOrCloneRepository.ps1
+		scripts\UpdateRepo_HelixToolkitForRobotArm.ps1 = scripts\UpdateRepo_HelixToolkitForRobotArm.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,6 +90,7 @@ Global
 		{424004DC-3B76-4486-97B6-8B72F5F1816F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{C03B2FCF-0796-D924-5373-22DB72BF051E} = {424004DC-3B76-4486-97B6-8B72F5F1816F}
 		{C19E3522-B147-5511-FEE9-984FF8446FB2} = {424004DC-3B76-4486-97B6-8B72F5F1816F}
+		{8D7DE512-334B-4BA7-9D62-C1A94130FFFC} = {21612A95-4CEF-49C4-8E4F-2CAA1956FCBA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1C2BA375-3D30-4ADF-BF0B-3950D0F30011}
