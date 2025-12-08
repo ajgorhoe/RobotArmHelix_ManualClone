@@ -17,7 +17,6 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using System.Reflection;
-using HelixToolkit.Geometry;
 using HelixToolkit.Wpf;
 
 /**
@@ -162,7 +161,7 @@ namespace RobotArmHelix
             builder.AddSphere(position, 50, 15, 15);
             geom = new GeometryModel3D(builder.ToMesh(), Materials.Brown);
             */
-            geom = GeometryHelper.CreateDebugSphere(new Point3D(0, 0, 0), 50, 40, 40, Colors.Yellow);
+            geom = GeometryHelper.CreateDebugSphere(new Point3D(0, 0, 0), 50, 30, 30, Colors.Yellow);
             visual = new ModelVisual3D();
             visual.Content = geom;
 
