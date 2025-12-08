@@ -15,10 +15,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Media.Media3D;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using HelixToolkit.Wpf;
 using System.IO;
 using System.Reflection;
-
+using HelixToolkit.Geometry;
+using HelixToolkit.Wpf;
 
 /**
  * Author: Gabriele Marini (Gabryxx7)
@@ -155,11 +155,14 @@ namespace RobotArmHelix
 #endif
             RoboticArm.Content = Initialize_Environment(modelsNames);
 
-            /** Debug sphere to check in which point the joint is rotating**/
+            /** Debug sphere to check in which point the joint is rotating **/
+            /* Lines below are replaced bt custom sphere creator (line below the comment):
             var builder = new MeshBuilder(true, true);
-            var position = new Point3D(0, 0, 0);
+            var position = new System.Numerics.Vector3(0, 0, 0); // Point3D(0, 0, 0);
             builder.AddSphere(position, 50, 15, 15);
             geom = new GeometryModel3D(builder.ToMesh(), Materials.Brown);
+            */
+            geom = GeometryHelper.CreateDebugSphere(new Point3D(0, 0, 0), 50, 40, 40, Colors.Yellow);
             visual = new ModelVisual3D();
             visual.Content = geom;
 
@@ -402,7 +405,7 @@ namespace RobotArmHelix
                 reachingPoint = new Vector3D(Double.Parse(TbX.Text), Double.Parse(TbY.Text), Double.Parse(TbZ.Text));
                 geom.Transform = new TranslateTransform3D(reachingPoint);
             }
-            catch (Exception exc)
+            catch (Exception)
             {
 
             }
@@ -538,7 +541,7 @@ namespace RobotArmHelix
                     ((EmissiveMaterial)mg.Children[0]).Color = newColor;
                     ((DiffuseMaterial)mg.Children[1]).Color = newColor;
                 }
-                catch (Exception exc)
+                catch (Exception)
                 {
                     previousColor = oldColor;
                 }
@@ -555,7 +558,7 @@ namespace RobotArmHelix
                 Model3DGroup models = ((Model3DGroup) pModel);
                 oldSelectedModel = models.Children[0] as GeometryModel3D;
             }
-            catch (Exception exc)
+            catch (Exception)
             {
                 oldSelectedModel = (GeometryModel3D) pModel;
             }

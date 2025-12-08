@@ -24,6 +24,10 @@ Beside providing the cloning scripts, an **initialization project** called `Init
 
 Of course, the solution `RobotArmHelix.sln` or projects individually can also be built by any other IDE (like `VS Code` or `JetBrains Rider`) or via command-line tools like `dotnet` or `MSBuild`.
 
+## Third Stage of Customization: Project Works With the Latest Helix Toolkit and Modern .NET
+
+By the 8th of December 2025, the project has been modified **such that it works with the latest** release of **Helix Toolkit** (at this time, version 3.1.2 from Nov 25, 2025). Modern .NET targets were also added. The project now **targets .NET 10, .NET 8, and .NET Framework 4.8**.
+
 ## Usage
 
 ### Use the Newer Way, Utilizing Cloning & Updating Scripts and Initialization Project
