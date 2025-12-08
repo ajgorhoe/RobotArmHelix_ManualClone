@@ -155,11 +155,14 @@ namespace RobotArmHelix
 #endif
             RoboticArm.Content = Initialize_Environment(modelsNames);
 
-            /** Debug sphere to check in which point the joint is rotating**/
+            /** Debug sphere to check in which point the joint is rotating **/
+            /* Lines below are replaced bt custom sphere creator (line below the comment):
             var builder = new MeshBuilder(true, true);
             var position = new System.Numerics.Vector3(0, 0, 0); // Point3D(0, 0, 0);
             builder.AddSphere(position, 50, 15, 15);
             geom = new GeometryModel3D(builder.ToMesh(), Materials.Brown);
+            */
+            geom = GeometryHelper.CreateDebugSphere(new Point3D(0, 0, 0), 50, 15, 15);
             visual = new ModelVisual3D();
             visual.Content = geom;
 
